@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<style>
+body
+{
+  background-image: url("pics/back1.gif");
+}
+h1
+{
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+.center
+{
+  width: 25%;
+  margin-top: 5%;
+  margin-left: 37%;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="card bg-dark text-white center">
+  <div class="card-header">
+    Contact Us
+  </div>
+  <div class="card-body">
+    E-mail: contact@gmail.com<br>
+    Ph. No.: 9876543210
+  </div>
+</div>
+<div id="map" style="border:2px solid blue; margin-top: 10%;width:100%;height:300px;background:white;"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(28.646019,77.1964343),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB08f3j9zca5oXC_QzQobIQbvnv9Wqf-u4&callback=myMap"></script>
+
+</body>
+</html>
