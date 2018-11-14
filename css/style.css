@@ -1,0 +1,17 @@
+body
+{
+  margin: 0;
+  background: lightgray;
+}
+.header
+{
+  width: 100%;
+  height: 15%;
+  background-color: black;
+}
+.row
+{
+  padding: 0px;
+  width: 100%;
+  background-color: blue;
+}
